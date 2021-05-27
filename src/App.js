@@ -1,13 +1,12 @@
 import './App.css';
-import Input from './components/Input';
-import List from './components/List';
+import FruitContainer from './components/FruitContainer';
 
 function App() {
+  let fruits = ["apple 🍎","pineapple 🍍","mango 🥭","banana 🍌","avocado 🥑", "kiwi 🥝"]
   return (
     <div className="App">
       <h1>Fruit Filter</h1>
-      <Input/>
-      <List/>
+      <FruitContainer fruits={fruits}/>
     </div>
   );
 }
